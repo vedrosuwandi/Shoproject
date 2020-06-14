@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="500.0" style="-fx-background-color: #0c0c0c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditStorageController">
+   <children>
+      <Button layoutX="432.0" layoutY="485.0" mnemonicParsing="false" onAction="#SaveData" text="Save" />
+      <Button layoutX="366.0" layoutY="485.0" mnemonicParsing="false" onAction="#BackToStorage" text="Cancel" />
+      <GridPane layoutX="23.0" layoutY="70.0" prefHeight="227.0" prefWidth="274.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.20001220703125" minWidth="10.0" prefWidth="70.79998779296875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.20001220703125" minWidth="10.0" prefWidth="173.20001220703125" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" textAlignment="RIGHT" wrappingWidth="71.20000000000005">
+               <font>
+                  <Font name="AvantGarde-Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location :" textAlignment="RIGHT" wrappingWidth="71.73675537109375" GridPane.rowIndex="1">
+               <font>
+                  <Font name="AvantGarde-Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Price :" textAlignment="RIGHT" wrappingWidth="71.9999877929688" GridPane.rowIndex="2">
+               <font>
+                  <Font name="AvantGarde-Medium" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Name" GridPane.columnIndex="1" />
+            <TextField fx:id="Price" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="Location" layoutX="110.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Text fill="#ffffff" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shoproject" textAlignment="CENTER" wrappingWidth="118.76005697250366">
+         <font>
+            <Font name="AvantGarde-Medium" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#ffffff" layoutX="160.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Storage" textAlignment="CENTER" wrappingWidth="164.35997009277344">
+         <font>
+            <Font name="AvantGarde-Medium" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#ffffff" layoutX="23.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" textAlignment="RIGHT" wrappingWidth="81.5999633789063">
+         <font>
+            <Font name="AvantGarde-Medium" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Description" layoutX="30.0" layoutY="321.0" prefHeight="154.0" prefWidth="458.0" />
+   </children>
+</AnchorPane>

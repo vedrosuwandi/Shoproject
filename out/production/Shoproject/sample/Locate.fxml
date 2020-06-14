@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="382.0" style="-fx-background-color: #0c0c0c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LocateController">
+   <children>
+      <Text fill="WHITE" layoutX="34.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Location :" wrappingWidth="141.33673858642578">
+         <font>
+            <Font name="AvantGarde-Medium" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="NewLocate" layoutX="175.0" layoutY="74.0" promptText="New Location">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Button layoutX="88.0" layoutY="130.0" mnemonicParsing="false" onAction="#CanceLocate" prefHeight="26.0" prefWidth="67.0" text="Cancel" />
+      <Button layoutX="209.0" layoutY="130.0" mnemonicParsing="false" onAction="#Locate" prefHeight="26.0" prefWidth="67.0" text="Save" />
+      <Label fx:id="Warning" layoutX="127.0" layoutY="166.0" prefHeight="18.0" prefWidth="134.0" textAlignment="CENTER" textFill="#ed0606" />
+   </children>
+</AnchorPane>
